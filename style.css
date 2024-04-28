@@ -1,0 +1,94 @@
+body {
+  background: linear-gradient(to right, #FFFFFF, #66ccff); /* Gradient background */
+  color: #333;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  position: relative;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.menu ul li:hover {
+  transform: translateY(-5px);
+}
+
+.menu ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu ul li:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.menu ul li a:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  right: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: right; /* Center the items horizontally */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  grid-gap: 40px 100px; /* Adjust the gap between rows and columns */
+  width: fit-content;
+  justify-content: flex-end;
+  transition: 1s;
+  padding-left: 50px;
+}
+
+.images img {
+  max-width: 100%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #f0f0f0; /* Add a solid border with a light gray color */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  transition: transform 0.3s ease; /* Apply transition effect */
+}
+
+.images img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+  z-index: 2; /* Ensure the image appears on top */
+}
+.main{
+  display: flex;
+  justify-content: center;
+}
