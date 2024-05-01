@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(to right, #FFFFFF, #66ccff); /* Gradient background */
-  color: #333;
+  background: black;
+  color: yellowgreen;
   font-family: "Goudy Bookletter 1911", sans-serif;
   position: relative;
 }
@@ -23,7 +23,7 @@ body {
 
 .menu ul li a {
   text-decoration: none;
-  color: #333;
+  color: yellowgreen;
   font-size: 18px;
   padding: 10px 20px;
   display: inline-block;
@@ -56,7 +56,7 @@ body {
 .logo {
   position: absolute;
   top: 20px; /* Adjust the distance from the top */
-  right: 20px;
+  left: 100px;
 }
 
 .container {
@@ -91,4 +91,28 @@ body {
 .main{
   display: flex;
   justify-content: center;
+}
+.colormode {
+  top: 20px;
+  position: absolute; /* or position: fixed; depending on your layout needs */
+  right: 20px; /* Adjust this value according to your design */
+  
+}
+#colorModeImage {
+  width: 50px; 
+  height: 50px; 
+}
+.light-mode {
+  background: linear-gradient(to right, #FFFFFF, #66ccff);
+  color: #333;
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  .menu ul li a:hover {
+    color: #ff6347; /* Change color on hover */
+  }
 }
