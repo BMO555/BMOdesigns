@@ -50,25 +50,25 @@ body {
 }
 
 .menu ul li a:hover {
-  color: #ff6347; /* Change color on hover */
+  color: #ff6347; 
 }
 
 .logo {
   position: absolute;
-  top: 20px; /* Adjust the distance from the top */
+  top: 20px; 
   left: 100px;
 }
 
 .container {
   display: flex;
-  justify-content: right; /* Center the items horizontally */
-  align-items: flex-start; /* Align items to the top */
+  justify-content: right; 
+  align-items: flex-start;
 }
 
 .images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-  grid-gap: 40px 100px; /* Adjust the gap between rows and columns */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 40px 100px; 
   width: fit-content;
   justify-content: flex-end;
   transition: 1s;
@@ -76,17 +76,17 @@ body {
 }
 
 .images img {
-  max-width: 100%; /* Ensure images don't exceed their container's width */
-  height: auto; /* Maintain aspect ratio */
-  border: 2px solid #f0f0f0; /* Add a solid border with a light gray color */
-  border-radius: 10px; /* Add rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-  transition: transform 0.3s ease; /* Apply transition effect */
+  max-width: 100%; 
+  height: auto; 
+  border: 2px solid #f0f0f0; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;
 }
 
 .images img:hover {
-  transform: scale(1.1); /* Scale the image on hover */
-  z-index: 2; /* Ensure the image appears on top */
+  transform: scale(1.1); 
+  z-index: 2; 
 }
 .main{
   display: flex;
@@ -94,9 +94,9 @@ body {
 }
 .colormode {
   top: 20px;
-  position: absolute; /* or position: fixed; depending on your layout needs */
-  right: 20px; /* Adjust this value according to your design */
-  
+  position: absolute; 
+  right: 20px; 
+
 }
 #colorModeImage {
   width: 50px; 
@@ -113,6 +113,6 @@ body {
     display: inline-block;
   }
   .menu ul li a:hover {
-    color: #ff6347; /* Change color on hover */
+    color: #ff6347; 
   }
 }
